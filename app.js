@@ -7,10 +7,10 @@ const overlay = document.querySelector('.overlay')
 const alertBox = document.querySelector('.details')
 
 
-function getAll(e){
+function getAll(){
     //const axios = require('axios');
     // Make a request for a user with a given ID
-    e.preventDefault();
+   // e.preventDefault();
     let inputValue = inputBox.value;
     let html = "";
 
@@ -69,16 +69,16 @@ function getAll(e){
     
     searchBar.addEventListener('click', getAll)
 
+    document.addEventListener("keyup", function(event) {
+        if (event.code === 'Enter') {
+            getAll()
+        }
+    });
+
     function closeModal(){ 
         showHide.style.display = "none";
         overlay.style.display = "none";
     }
     closeIcon.addEventListener('click', closeModal)
    
-    /**
-     clearResult();
-    function clearResult(){
-    if (inputValue = "") {
-        displayUniversities.innerHTML = null;
-    }*
-    }*/
+
