@@ -10,19 +10,19 @@ const alertBox = document.querySelector('.details')
 function getAll(){
     //const axios = require('axios');
     // Make a request for a user with a given ID
-   // e.preventDefault();
+    //e.preventDefault();
     let inputValue = inputBox.value;
     let html = "";
 
     axios.get(`http://universities.hipolabs.com/search?name=${inputValue}`)
         .then(function (response) {
         // handle success
-        //console.log(response);
+        console.log(response);
 
         let results = response.data
         //console.log(results)
         
-        if(results.length >= 1) { 
+        if(results.length) { 
             results.forEach(element => { 
             html += `
             <div>
