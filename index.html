@@ -15,7 +15,7 @@
                 <div id="inner">
                     <h1>Find the names and countries of the universities in the world.</h1>
                     <div id="input-container">
-                        <img src="search-icon.svg" id="search"/>
+                        <img src="./assets/search-icon.svg" id="search"/>
                         <input 
                             autofocus
                             type="text" 
@@ -24,18 +24,34 @@
                             />
                     </div>
                 </div>
+
+                <div class="overlay"></div>
+                <div class="show-hide">
+                    <div class="outer-not-found">
+                        <div class="not-found">
+                            <img src="./assets/close-icon.png" class="close-icon"/>
+                            <div class="details">
+                                <!--<img src="./assets/not-found.png"  id="not-found-photo"/>
+                                <h2 class="oops">Oops! <br>Sorry the word you requested is not found</h2>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </section>
-        <section id="display-results">
-            <div class="elements">
-                <!--<h2 class="school-name"></h2>
-                <a class="school-url">wwww.ceeplusng.com</a>
-                <p class="school-country">canada</p>-->
-            </div>
-        </section>  
+            
+            <section id="display-results">
+                <div class="elements">
+                    <!--<h2 class="school-name"></h2>
+                    <a class="school-url">wwww.ceeplusng.com</a>
+                    <p class="school-country">canada</p>-->
+                </div>
+            </section>  
         </main>
         
-       
+        
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="app.js"></script>
+    
     </body>
+    
 </html>
