@@ -8,6 +8,7 @@ const alertBox = document.querySelector('.details')
 
 
 function getAll(){
+
     //e.preventDefault();
     let inputValue = inputBox.value;
     let html = "";
@@ -70,6 +71,7 @@ function getAll(){
     document.addEventListener("keyup", function(event) {
         if (event.code === 'Enter') {
             getAll()
+         inputBox.value = ""
         }
     });
 
