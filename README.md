@@ -1,4 +1,4 @@
-# universities
+# Universities
 <img src="./assets/screenshot.png" alt="project">
 This website helps to find the names, websites and countries of the universities in the world.
 
